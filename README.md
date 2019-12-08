@@ -27,17 +27,8 @@
     
 ### **三、实验过程**
    
-    
-
-    1.在实验三的基础上，
-    
-    2.定义空字符串str2，利用for循环把古诗分为每七个字符为一组，并截取i*7个字符先放到空字符串中，以免加入标点符号之后不能正确输出古诗内容
-   
-    3.对于划分好组的字符i*7用if-else方法判断i*7奇数时加",",偶数时加"。"，以字符串形式输出加入标点后的古诗
-   
-    4.定义count方法，传入古诗字符串及需查找字符的形参，初始化count实际长度及index索引为0，用while循环在字符串中搜索字符，返回字符从左起首次出现的位置，若没有出现，返回-1，若出现所查找字符则索引长度加一，实际长度加一继续查找字符，并返回实际长度  
-   
-    5.在主函数中定义需查找次数的字符，调用count函数输出字符出现的次数，并对整个循环抛出异常
+    1.创建Register类，作为用户注册界面，并利用GUI组件设置用户名文本框、密码框以及确认密码输入框，提交按钮。对于用于输入的两次密码利用数组获取并判断是否相等，若相等，把注册信息写入到文件中，如果文件不存在则创建文件，此处进行IO异常处理；若两次密码不相等，弹出错误信息，用户重新输入。
+  
     
 ### **四、类的介绍**
 
@@ -56,43 +47,3 @@
 + Information：管理员添加课程界面
 
 + Model：学生选课界面
-
-### **五、核心代码** 
-1.实例化StringBuilder（动态字符串数组）方法，调用StringBuilder的append方法将字符串添加到StringBuilder之后
-
-  ```
-  StringBuilder builder = new StringBuilder();//动态字符串数组
-  builder.append("汉皇重色思倾国御宇多年求不得...")
-   ```
-2.划分七个字符一组并截取
-```
-for(int i=0;i<builder.length();i++){
-			if(i*7+7>builder.length()){//每7个为一组
-				str2 +=builder.substring(i*7, builder.length());//截取i*7个字符
-				break;
-```
- 3.判断i*7奇数时加",",偶数时加"。"
-```
- if((i*7)%2==0){//判断i*7奇数时加",",偶数时加"。"
-			str2 += builder.substring(i*7, i*7+7)+",";
-    }	else{
-    	str2 += builder.substring(i*7, i*7+7)+"."+"\n";
-    }
-```
-   4.查找古诗中某一词出现的次数
-```
-    String find = "杨";//查找古诗中"杨"
-		int count = count(builder, find);//调用count方法，在古诗中统计“杨”出现的次数
-		System.out.println("本诗中  "+find +  " 出现的次数:"+ count+"次");
-```
-   5.利用while循环完成统计字符实际长度操作
-```
-    while ((index = str.indexOf(findStr, index)) != -1) {//在字符串中搜索字符，返回字符从左起首次出现的位置，若没有出现，返回-1
-	    index = index + findStr.length();
-	    count++;
-	   }
-```
-### **五、运行结果截图** 
-https://github.com/Yuer1101/StringPoem/blob/master/%E6%8D%95%E8%8E%B7.PNG
-### **六、实验心得** 
-通过本次实验使我更加熟悉了String字符串的使用，通过实际操作了解了String、StringBuffer、StringBuilder的区别，学会使用StringBuilder的append方法向字符串后面添加内容、subString的截取方法和try..catch抛出异常、函数之间的调用，都让我对程序的设计有了新的认识并学会了简单应用，完成的实现了古诗标点输出及字符出现次数统计，通过github编写实验报告，学习到了markdown排版方式，并应用到了标题、文字加粗、多行文本、文字高亮、图片链接等的方法，收获很大，也提升了兴趣，希望以后也可以不断的学习新的方法不断的补充和丰富自己。
