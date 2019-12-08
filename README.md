@@ -146,28 +146,28 @@
 
 1.注册界面
 
-https://github.com/Yuer1101/StudentSelectSystem/blob/master/img/%E5%AD%A6%E7%94%9F%E6%B3%A8%E5%86%8C.PNG
+![](https://github.com/Yuer1101/StudentSelectSystem/blob/master/img/%E5%AD%A6%E7%94%9F%E6%B3%A8%E5%86%8C.PNG)
 
 2.登录界面
 
-https://github.com/Yuer1101/StudentSelectSystem/blob/master/img/%E6%9F%A5%E7%9C%8B.PNG
+![](https://github.com/Yuer1101/StudentSelectSystem/blob/master/img/%E6%9F%A5%E7%9C%8B.PNG)
 
 3.管理员添加课程界面
 
-https://github.com/Yuer1101/StudentSelectSystem/blob/master/img/%E7%99%BB%E5%BD%95.PNG
+![](https://github.com/Yuer1101/StudentSelectSystem/blob/master/img/%E7%99%BB%E5%BD%95.PNG)
 
 4.学生选课界面输入课程名称
 
-https://github.com/Yuer1101/StudentSelectSystem/blob/master/img/%E9%80%80%E8%AF%BE.PNG
+![](https://github.com/Yuer1101/StudentSelectSystem/blob/master/img/%E9%80%80%E8%AF%BE.PNG)
 
 5.查询选课信息
 
-https://github.com/Yuer1101/StudentSelectSystem/blob/master/img/%E9%80%89%E8%AF%BE.PNG
+![](https://github.com/Yuer1101/StudentSelectSystem/blob/master/img/%E9%80%89%E8%AF%BE.PNG)
 
 6.退课
 
 
-https://github.com/Yuer1101/StudentSelectSystem/blob/master/img/%E9%80%89%E8%AF%BE%E5%88%97%E8%A1%A8.PNG
+![](https://github.com/Yuer1101/StudentSelectSystem/blob/master/img/%E9%80%89%E8%AF%BE%E5%88%97%E8%A1%A8.PNG)
 
 ### **七、实验心得**
 通过本次实验比较完整的完成了学生管理系统的设计，通过一个星期对课本知识完整的复习，我更加理解了方法的使用，对此次实验的一些功能也做了完善。除了基本的界面设计，对于事件处理的方法书写也比较熟悉，通过课本及网上资料的帮助，也完成了对文件的读取和写入的实际性操作，文件的保存相当于一个小型数据库的存在，与此同时我对于异常处理方法的书写与应用也游刃有余，每实现一个小的功能都会有收获，也提升了我的兴趣。本次实验不足的地方在于管理员添加课程提交的时候功能不太完善，退课操作和查看课程信息调用数据实现的不是很好，在跳转另外一个界面的时候原界面不会自动关闭，今后我会多加练习，不断地是自己进步。
